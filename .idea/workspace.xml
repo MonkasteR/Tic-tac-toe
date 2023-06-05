@@ -53,7 +53,7 @@
       <workItem from="1685885289976" duration="713000" />
       <workItem from="1685898817898" duration="5677000" />
       <workItem from="1685983472255" duration="6260000" />
-      <workItem from="1685997968074" duration="3722000" />
+      <workItem from="1685997968074" duration="8443000" />
     </task>
     <task id="LOCAL-00001" summary="Write player_move function">
       <created>1685998033996</created>
@@ -62,7 +62,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685998033996</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Write complit">
+      <created>1686001927114</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686001927114</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,9 +92,10 @@
     <MESSAGE value="Write display board function" />
     <MESSAGE value="Write check_win function" />
     <MESSAGE value="Write player_move function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Write player_move function" />
+    <MESSAGE value="Write complit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Write complit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Tic_tac_toe$main.coverage" NAME="main Coverage Results" MODIFIED="1686001527684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Tic_tac_toe$main.coverage" NAME="main Coverage Results" MODIFIED="1686005121069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
