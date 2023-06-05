@@ -29,11 +29,17 @@ def display_board():
     print(' └───┴───┴───┘')
 
 def player_move():
-    move = []
-    print('Введите координаты хода')
-    print('Два числа от 1 до 3 через пробел')
-    move = input()
-    print(move)
+    move = ()
+    while True
+        print('Введите координаты хода')
+        print('   Столбец и строку')
+        print('Два числа от 1 до 3 через пробел')
+        in_str = input()
+        # move =[x-1 for x in list(map(int, in_str.split()))]
+        move =list(map(int, in_str.split()))
+        if
+        # print(type(move))
+        print(move) # удалить после отладки
     return
 
 def check_win(mark):
@@ -54,7 +60,7 @@ def check_win(mark):
 def draw_check():
     return
 
-# Определяем функцию для хода компьютера
+# Ход компьютера
 def computer_move():
     for i in range(3):
         for j in range(3):
@@ -84,7 +90,7 @@ def computer_move():
 
 
 greating()
-print(display_board())
+# print(display_board())
 
 # Основной цикл игры
 display_board()
@@ -95,6 +101,9 @@ while (True):
     display_board()
     if (check_win('X')):
         print('Вы победили!')
+        break
+    if count == 9:
+        print('{Ходов больше нет}')
         break
     computer_move()
     count += 1
