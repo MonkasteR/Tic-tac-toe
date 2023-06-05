@@ -29,10 +29,27 @@ def display_board():
     print(' └───┴───┴───┘')
 
 def player_move():
+    move = []
+    print('Введите координаты хода')
+    print('Два числа от 1 до 3 через пробел')
+    move = input()
+    print(move)
     return
 
-def check_win():
-    return
+def check_win(mark):
+    # Проверяем строки и столбцы
+    for i in range(3):
+        if all([board[i][j] == mark for j in range(3)]):
+            return True
+        if all([board[j][i] == mark for j in range(3)]):
+            return True
+    # Проверяем диагонали
+    if all([board[i][i] == mark for i in range(3)]):
+        return True
+    if all([board[i][2-i] == mark for i in range(3)]):
+        return True
+    return False
+
 
 def draw_check():
     return
@@ -71,13 +88,16 @@ print(display_board())
 
 # Основной цикл игры
 display_board()
+count=1
 while (True):
     player_move()
+    count += 1
     display_board()
     if (check_win('X')):
         print('Вы победили!')
         break
     computer_move()
+    count += 1
     display_board()
     if (check_win('O')):
         print('Компьютер победил.')
