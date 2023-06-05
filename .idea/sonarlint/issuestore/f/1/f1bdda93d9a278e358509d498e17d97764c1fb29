@@ -1,0 +1,17 @@
+
+Ipython:S1481"%Remove the unused local variable "i".(ˆÎ¤üÿÿÿÿ8‹Ğª¾ˆ1
+<python:S3626
+"Remove this redundant return.(ÙãŞŸ8‹Ğª¾ˆ1
+ipython:S3457"EAdd replacement fields or use a normal string instead of an f-string.(œÁı­ıÿÿÿÿ8‹Ğª¾ˆ1
+ipython:S3457"EAdd replacement fields or use a normal string instead of an f-string.(áùÜııÿÿÿÿ8‹Ğª¾ˆ1
+ipython:S3457"EAdd replacement fields or use a normal string instead of an f-string.(œÁı­ıÿÿÿÿ8ŒĞª¾ˆ1
+dpython:S3457"EAdd replacement fields or use a normal string instead of an f-string.(¼‰–Ä8ŒĞª¾ˆ1
+dpython:S3457"EAdd replacement fields or use a normal string instead of an f-string.(¾Íšæ8ŒĞª¾ˆ1
+dpython:S3457"EAdd replacement fields or use a normal string instead of an f-string.(„Õœõ8ŒĞª¾ˆ1
+ipython:S3457	"EAdd replacement fields or use a normal string instead of an f-string.(œÁı­ıÿÿÿÿ8ŒĞª¾ˆ1
+<python:S3626"Remove this redundant return.(ÙãŞŸ8ŒĞª¾ˆ1
+xpython:S3776"TRefactor this function to reduce its Cognitive Complexity from 29 to the 15 allowed.(Ë„¥Äùÿÿÿÿ8÷Œ€Ãˆ1
+hpython:S930"JRemove 1 unexpected arguments; 'check_win' expects 0 positional arguments.(õòÀ8øŒ€Ãˆ1
+mpython:S930'"JRemove 1 unexpected arguments; 'check_win' expects 0 positional arguments.(„²Üùÿÿÿÿ8øŒ€Ãˆ1
+mpython:S930>"JRemove 1 unexpected arguments; 'check_win' expects 0 positional arguments.(„²Üùÿÿÿÿ8û’‚Ãˆ1
+hpython:S930C"JRemove 1 unexpected arguments; 'check_win' expects 0 positional arguments.(õòÀ8û’‚Ãˆ1

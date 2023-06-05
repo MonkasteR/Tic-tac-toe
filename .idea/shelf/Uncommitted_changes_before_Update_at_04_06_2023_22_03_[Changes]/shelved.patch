@@ -1,0 +1,72 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1685898955303)
++++ b/.idea/misc.xml	(date 1685898955303)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (3)" project-jdk-type="Python SDK" />
++</project>
+\ No newline at end of file
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision f802ca78a177833127400c93df1d8867bb495231)
++++ b/main.py	(date 1685904064165)
+@@ -1,0 +1,26 @@
++board = [[' '] * 3 for i in range(3)]
++def greating():
++    print(f'|------------------------------|')
++    print(f'|     Игра в крестики-нолики   |')
++    print(f'|------------------------------|')
++    print(f'|   Введите координаты хода    |')
++    print(f'|     два числа от 1 до 3      |')
++    print(f'| номер столбца и номер строки |')
++    print(f'|------------------------------|')
++    return
++
++def display_board():
++    print('\n'.join(['|'.join(row) for row in board]),'\n')
++    return
++
++def move():
++    return
++
++def check_win():
++    return
++
++def draw_check():
++    return
++
++greating()
++print(display_board())
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1685888972350)
++++ b/.idea/vcs.xml	(date 1685888972350)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/sonarlint/issuestore/index.pb b/.idea/sonarlint/issuestore/index.pb
+new file mode 100644
+diff --git a/.idea/sonarlint/securityhotspotstore/index.pb b/.idea/sonarlint/securityhotspotstore/index.pb
+new file mode 100644
