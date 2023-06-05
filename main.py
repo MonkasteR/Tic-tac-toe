@@ -1,19 +1,34 @@
 board = [[' '] * 3 for i in range(3)]
 def greating():
-    print(f'|------------------------------|')
-    print(f'|     Игра в крестики-нолики   |')
-    print(f'|------------------------------|')
-    print(f'|   Введите координаты хода    |')
-    print(f'|     два числа от 1 до 3      |')
-    print(f'| номер столбца и номер строки |')
-    print(f'|------------------------------|')
+    print(f'┌──────────────────────────────┐')
+    print(f'│     Игра в крестики-нолики   │')
+    print(f'├──────────────────────────────┤')
+    print(f'│   Введите координаты хода    │')
+    print(f'│     два числа от 1 до 3      │')
+    print(f'│ номер столбца и номер строки │')
+    print(f'└──────────────────────────────┘')
     return
 
+# def display_board():
+#     print(f'   1   2   3')
+#     print(f' ┌───┬───┬───┐')
+#     print(f'1│ {board[0][0]} │ {board[0][1]} │ {board[0][2]} │')
+#     print(f' ├───┼───┼───┤')
+#     print(f'1│ {board[1][0]} │ {board[1][1]} │ {board[1][2]} │')
+#     print(f' ├───┼───┼───┤')
+#     print(f'1│ {board[2][0]} │ {board[2][1]} │ {board[2][2]} │')
+#     print(f' └───┴───┴───┘')
+#     return
 def display_board():
-    print('\n'.join(['|'.join(row) for row in board]),'\n')
-    return
+    print('   1   2   3')
+    print(' ┌───┬───┬───┐')
+    for i in range(3):
+        print(f'{i+1}│ {board[i][0]} │ {board[i][1]} │ {board[i][2]} │')
+        if i != 2:
+            print(' ├───┼───┼───┤')
+    print(' └───┴───┴───┘')
 
-def move():
+def player_move():
     return
 
 def check_win():
