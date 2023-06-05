@@ -1,4 +1,5 @@
 board = [[' '] * 3 for i in range(3)]
+
 def greating():
     print(f'┌──────────────────────────────┐')
     print(f'│     Игра в крестики-нолики   │')
@@ -9,38 +10,31 @@ def greating():
     print(f'└──────────────────────────────┘')
     return
 
-# def display_board():
-#     print(f'   1   2   3')
-#     print(f' ┌───┬───┬───┐')
-#     print(f'1│ {board[0][0]} │ {board[0][1]} │ {board[0][2]} │')
-#     print(f' ├───┼───┼───┤')
-#     print(f'1│ {board[1][0]} │ {board[1][1]} │ {board[1][2]} │')
-#     print(f' ├───┼───┼───┤')
-#     print(f'1│ {board[2][0]} │ {board[2][1]} │ {board[2][2]} │')
-#     print(f' └───┴───┴───┘')
-#     return
+
 def display_board():
     print('   1   2   3')
     print(' ┌───┬───┬───┐')
     for i in range(3):
-        print(f'{i+1}│ {board[i][0]} │ {board[i][1]} │ {board[i][2]} │')
+        print(f'{i + 1}│ {board[i][0]} │ {board[i][1]} │ {board[i][2]} │')
         if i != 2:
             print(' ├───┼───┼───┤')
     print(' └───┴───┴───┘')
 
+
 def player_move():
-    move = ()
-    while True
+    move = []
+    while True:
         print('Введите координаты хода')
         print('   Столбец и строку')
         print('Два числа от 1 до 3 через пробел')
-        in_str = input()
-        # move =[x-1 for x in list(map(int, in_str.split()))]
-        move =list(map(int, in_str.split()))
-        if
-        # print(type(move))
-        print(move) # удалить после отладки
+        move = [x - 1 for x in list(map(int, str.split(input())))]
+        if (0 <= move[0] <= 2) and (0 <= move[1] <= 2) and board[move[1]][move[0]] == ' ':
+            board[move[1]][move[0]] = 'X'
+            break
+        else:
+            print('Неверный ход. Попробуйте снова.')
     return
+
 
 def check_win(mark):
     # Проверяем строки и столбцы
@@ -52,13 +46,10 @@ def check_win(mark):
     # Проверяем диагонали
     if all([board[i][i] == mark for i in range(3)]):
         return True
-    if all([board[i][2-i] == mark for i in range(3)]):
+    if all([board[i][2 - i] == mark for i in range(3)]):
         return True
     return False
 
-
-def draw_check():
-    return
 
 # Ход компьютера
 def computer_move():
@@ -90,15 +81,14 @@ def computer_move():
 
 
 greating()
-# print(display_board())
+display_board()
+count = 1
 
 # Основной цикл игры
-display_board()
-count=1
-while (True):
+while True:
     player_move()
-    count += 1
     display_board()
+    count += 1
     if (check_win('X')):
         print('Вы победили!')
         break
@@ -106,8 +96,11 @@ while (True):
         print('{Ходов больше нет}')
         break
     computer_move()
-    count += 1
     display_board()
+    count += 1
     if (check_win('O')):
         print('Компьютер победил.')
+        break
+    if count >= 10:
+        print('Ничья.')
         break
